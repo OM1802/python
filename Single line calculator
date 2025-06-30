@@ -1,0 +1,1 @@
+print(int(eval(input("ENTER EXPRESSION TO BE SOLVED: "))))

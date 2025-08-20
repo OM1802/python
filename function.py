@@ -1,8 +1,11 @@
-l=[1,2,3,4,5,6,7,8,9]
+def main():
+    n=int(input("ENTER NUMBER: "))
+    print(factorial(n))
 
-def func(n):
-    for i in range(len(n)):
-        print(n[i], end=" ")
-        i+=1
+def factorial(x):
+    f=1
+    for i in range(1,x+1):
+        f=f*i
+    return f 
 
-func(l)
+main()

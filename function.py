@@ -8,4 +8,5 @@ def factorial(x):
         f=f*i
     return f 
 
-main()
+while True:
+    main()

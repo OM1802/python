@@ -68,7 +68,7 @@ class DLL:
             temp=self.start
             while temp.next.next is not None:
                 temp=temp.next
-            temp.next=none
+            temp.next=None
             temp.next.next.prev=None
             
     def delete_data(self,data):
@@ -77,30 +77,3 @@ class DLL:
         else:
             temp=self.start
             while temp is not None:
-                
-        
-            
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        

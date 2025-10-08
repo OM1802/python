@@ -20,8 +20,9 @@ class Stack:
             print("EMPTY STACK, OPERATION NOT POSSIBLE!!")
             return None
         else:
+            temp=self.top.data
             self.top=self.top.next
-            print("ELEMENT DELETED!!", end='\n')
+            print(f"ELEMENT SUCCESSFULLY DELETED, DELETED ELEMENT:{temp}", end='\n')
             print()
         
     def peek(self):
@@ -29,7 +30,7 @@ class Stack:
             print("EMPTY STACK, OPERATION NOT POSSIBLE!!")
             return None
         else:
-            print("THE TOP ELEMENT IS:",self.top.data, end='\n')
+            print(f"THE TOP ELEMENT IS: {self.top.data}", end='\n')
             print()
             
     def display(self):
@@ -39,7 +40,7 @@ class Stack:
             temp=self.top
             print("ALL ELEMENTS IN STACK TOP TO BOTTOM:",end='\n')
             while temp is not None:
-                print(temp.data, end='\n')
+                print(f"|{temp.data}|", end='\n')
                 temp=temp.next
                 
 s1=Stack()
@@ -52,5 +53,3 @@ s1.peek()
 s1.pop()
 s1.peek()
 s1.display()
-        
-        

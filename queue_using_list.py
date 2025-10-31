@@ -17,7 +17,7 @@ class Queue:
             
     def dequeue(self):
         if self.is_empty():
-            print("EMPTY QUEUE. DEQUEUE NOT POSSIBLE!!")
+            print("QUEUE UNDERFLOW. DEQUEUE NOT POSSIBLE!!")
             return
         self.mylist.pop(0)#from collections import dequeue self.mylist.popleft() //for O(1)
         print("DEQUEUE OPERATION PERFORMED SUCCESSFULLY", end='\n')
